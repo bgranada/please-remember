@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" href="main.css">
+
+  </head>
+
+  <body>
+    <button>
+    <div class="text">
+      <p>
+        PLEASE REMEMBER<br>
+        PLEASE REMEMBER<br>
+        PLEASE REMEMBER<br>
+      </p>
+    </div>
+    </button>
+
+    <script type = "text/javascript">
+       var color = ["linear-gradient(to left,#FF9045,#FFBB4D,#FA7268)", "linear-gradient(to left,#FF9045,#FA7268,#FFBB4D)", "linear-gradient(to left, #FA7268,#FF9045,#FFBB4D)", "linear-gradient(to left, #FA7268,#FA7268,#FA7268)"];
+       var i = 0;
+       <!--this targets the button in the html, then it says when you click the button, go through the array. it changes. the background in the css to whatever is in the array at that index-->
+       document.querySelector("button").addEventListener("click", function(){
+         i = i <color.length ? ++i: 0;
+           document.querySelector("html").style.background = color [i]
+
+       })
+      </script>
+  </body>
+</html>

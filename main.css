@@ -1,0 +1,21 @@
+html
+{
+  background: linear-gradient(to left, #FA7268,#FA7268,#FA7268);
+}
+
+button
+{
+ position: absolute;
+ top: 30%;
+ left: 34%;
+ background: none;
+ border: none;
+ outline: none;
+}
+
+.text
+{
+  font-family: "Baskerville";
+  font-size: 40px;
+  color: #ffffff;
+}
